@@ -1,0 +1,7 @@
+{
+  "name": "vicinae-extensions",
+  "version": "1.0.0",
+  "author": "RichardDorian",
+  "license": "MIT",
+  "packageManager": "pnpm@10.32.1"
+}
