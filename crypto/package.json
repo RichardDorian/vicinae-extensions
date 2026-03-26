@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/vicinaehq/vicinae/refs/heads/main/extra/schemas/extension.json",
+  "name": "crypto",
+  "title": "Crypto",
+  "description": "An extension for generating cryptography related data such as hashes or UUIDs.",
+  "categories": [],
+  "license": "MIT",
+  "author": "RichardDorian",
+  "contributors": [],
+  "pastContributors": [],
+  "icon": "extension_icon.png",
+  "commands": [
+    {
+      "name": "uuid-v4",
+      "title": "Generate UUID",
+      "subtitle": "Copies a random UUID to the clipboard",
+      "description": "This command generates a random version 4 UUID and copies it to the clipboard.",
+      "mode": "no-view"
+    },
+    {
+      "name": "hash",
+      "title": "Calculate Hash",
+      "subtitle": "Calculate the hash of the given text",
+      "description": "Calculate the hash of the provided text using multiple algorithms.",
+      "mode": "view"
+    }
+  ],
+  "preferences": [],
+  "scripts": {
+    "build": "vici build",
+    "dev": "vici develop",
+    "format": "biome format --write src",
+    "lint": "vici lint"
+  },
+  "dependencies": {
+    "@vicinae/api": "^0.18.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.2",
+    "typescript": "^5.9.2"
+  }
+}

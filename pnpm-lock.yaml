@@ -8,6 +8,19 @@ importers:
 
   .: {}
 
+  crypto:
+    dependencies:
+      '@vicinae/api':
+        specifier: ^0.18.3
+        version: 0.18.3(@types/node@25.5.0)(@types/react@19.0.10)(typescript@5.9.3)
+    devDependencies:
+      '@biomejs/biome':
+        specifier: 2.3.2
+        version: 2.3.2
+      typescript:
+        specifier: ^5.9.2
+        version: 5.9.3
+
   network-manager:
     dependencies:
       '@types/node':
@@ -270,8 +283,18 @@ packages:
   '@types/node@25.5.0':
     resolution: {integrity: sha512-jp2P3tQMSxWugkCUKLRPVUpGaL5MVFwF8RDuSRztfwgN1wmqJeMSbKlnEtQqU8UrhTmzEmZdu2I6v2dpp7XIxw==}
 
+  '@types/react@19.0.10':
+    resolution: {integrity: sha512-JuRQ9KXLEjaUNjTWpzuR231Z2WpIwczOkBEIvbHNCzQefFIT0L8IqE6NV6ULLyC1SI/i234JnDoMkfg+RjQj2g==}
+
   '@types/react@19.2.14':
     resolution: {integrity: sha512-ilcTH/UniCkMdtexkoCN0bI7pMcJDvmQFPvuPvmEaYA/NSfFTAgdUSLAoVjaRJm7+6PvcM+q1zYOwS4wTYMF9w==}
+
+  '@vicinae/api@0.18.3':
+    resolution: {integrity: sha512-pP0bUUVEYd3FBRWHiF0iB7ScgqsQDRpaGNycVI7w4mJoiQqdwqmrZn3hO+OS51Xxb6yVilhtdHV/cG2mdJS7dg==}
+    hasBin: true
+    peerDependencies:
+      '@types/node': '>=18'
+      '@types/react': 19.0.10
 
   '@vicinae/api@0.20.8':
     resolution: {integrity: sha512-oVkShvDOm1XF6x47EQ3CDmthK+esOFF8ND8ORWsSsWf6SCBrbrWROksquvl5pMSIg7OJYs2iK4qFFBE8Tig2Og==}
@@ -764,9 +787,30 @@ snapshots:
     dependencies:
       undici-types: 7.18.2
 
+  '@types/react@19.0.10':
+    dependencies:
+      csstype: 3.2.3
+
   '@types/react@19.2.14':
     dependencies:
       csstype: 3.2.3
+
+  '@vicinae/api@0.18.3(@types/node@25.5.0)(@types/react@19.0.10)(typescript@5.9.3)':
+    dependencies:
+      '@jgoz/esbuild-plugin-typecheck': 4.0.4(esbuild@0.25.12)(typescript@5.9.3)
+      '@oclif/core': 4.10.2
+      '@oclif/plugin-help': 6.2.40
+      '@oclif/plugin-plugins': 5.4.59
+      '@types/node': 25.5.0
+      '@types/react': 19.0.10
+      chokidar: 4.0.3
+      esbuild: 0.25.12
+      react: 19.0.0
+      zod: 4.3.6
+    transitivePeerDependencies:
+      - '@jgoz/esbuild-plugin-livereload'
+      - supports-color
+      - typescript
 
   '@vicinae/api@0.20.8(@types/node@25.5.0)(@types/react@19.2.14)(typescript@5.9.3)':
     dependencies:
